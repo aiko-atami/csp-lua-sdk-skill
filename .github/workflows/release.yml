@@ -18,8 +18,10 @@ jobs:
         run: zip -r csp-lua-sdk.zip SKILL.md references/
 
       - name: Create Release
-        uses: softprops/action-gh-release@v2
-        if: startsWith(github.ref, 'refs/tags/')
-        with:
-          files: csp-lua-sdk.zip
-          generate_release_notes: true
+        run: |
+          gh release create ${{ github.ref_name }} \
+            csp-lua-sdk.zip \
+            --title "Release ${{ github.ref_name }}" \
+            --generate-notes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
