@@ -12,15 +12,13 @@ This repository contains a **Claude Skill** designed to help users engage with t
 
 To use this skill with Claude:
 
-1.  **Clone or Download** this repository.
-2.  **Create a ZIP Archive**:
-    *   Select `SKILL.md` and the `references/` folder.
-    *   **Exclude** this `README.md` and the `.git/` folder.
-    *   Compress the selected items into `csp-lua-sdk.zip` (or any name).
-3.  **Upload to Claude**:
+1.  **Download the latest release**:
+    *   Go to the [Releases page](../../releases/latest).
+    *   Download the `csp-lua-sdk.zip` asset.
+2.  **Upload to Claude**:
     *   Navigate to **Settings > Capabilities > Skills** (or the relevant Skills menu in your Claude interface).
     *   Click **Add Skill** (or Upload).
-    *   Upload your `.zip` file.
+    *   Upload the `.zip` file.
 
 ## ✨ Features
 
